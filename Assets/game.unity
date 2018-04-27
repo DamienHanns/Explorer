@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4923380088227118, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.6
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: 4923380088227118, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: 4.08
       objectReference: {fileID: 0}
     - target: {fileID: 4923380088227118, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
       propertyPath: m_LocalPosition.z
@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4923380088227118, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114818086803938172, guid: 4b10ec5634943674cb4293ba196ee292,
         type: 2}
@@ -159,11 +159,11 @@ Prefab:
       objectReference: {fileID: 1844642198}
     - target: {fileID: 4863156151024568, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.0041668415
+      value: 0.0050001144
       objectReference: {fileID: 0}
     - target: {fileID: 4863156151024568, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.0066666007
+      value: 0.0033335686
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b10ec5634943674cb4293ba196ee292, type: 2}
@@ -338,7 +338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4439001007068972, guid: 4f02f7ccbd486ce47b54a49c957ccc2e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1772653121924846, guid: 4f02f7ccbd486ce47b54a49c957ccc2e, type: 2}
       propertyPath: m_Name
@@ -422,11 +422,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4351775196230096, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.77
+      value: -2.81
       objectReference: {fileID: 0}
     - target: {fileID: 4351775196230096, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.89
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: 4351775196230096, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}
       propertyPath: m_LocalPosition.z
@@ -450,20 +450,50 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4351775196230096, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114617315338549390, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
         type: 2}
       propertyPath: _pc2D
       value: 
       objectReference: {fileID: 1844642198}
+    - target: {fileID: 114623133077184476, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
+        type: 2}
+      propertyPath: layermask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623133077184476, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
+        type: 2}
+      propertyPath: detectionRadius
+      value: 4.23
+      objectReference: {fileID: 0}
     - target: {fileID: 4258061214405956, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.06333339
+      value: -0.0025000572
       objectReference: {fileID: 0}
     - target: {fileID: 4258061214405956, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.02666676
+      value: 0.00999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 114617315338549390, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
+        type: 2}
+      propertyPath: IsAMovingObject
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114617315338549390, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
+        type: 2}
+      propertyPath: IsAChildSprite
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623133077184476, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
+        type: 2}
+      propertyPath: targetMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623133077184476, guid: af4f1fa1b26c6184db22e4f7e02d7d39,
+        type: 2}
+      propertyPath: obsticleMask.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af4f1fa1b26c6184db22e4f7e02d7d39, type: 2}

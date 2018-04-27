@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class State : MonoBehaviour
+[CreateAssetMenu (menuName = "PlugableAI/State")]
+public class State : ScriptableObject
 {
 
-    public TakeAction[] actions;
+    public AIAction[] actions;
     public Transition[] transitions;
 
     public Color stateIndicatorColour;
@@ -14,17 +15,21 @@ public class State : MonoBehaviour
     public void ExecuteState(StateController controller)
     {
         PerformActions(controller);
-   //     CheckTransitions(controller);
+        CheckTransitions(controller);
     }
 
     void PerformActions(StateController controller)
     {
-        for (int i = 0; i < actions.Length; i++)
+        if (actions != null)
         {
-            actions[i].Act(controller);
+            for (int i = 0; i < actions.Length; i++)
+            {
+                actions[i].Act(controller);
+            }
         }
+       
     }
-    /*
+ 
     void CheckTransitions(StateController controller)
     {
         for (int i = 0; i < transitions.Length; i++)
@@ -41,5 +46,4 @@ public class State : MonoBehaviour
             }
         }
     }
-    */
 }
