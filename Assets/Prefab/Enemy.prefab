@@ -81,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1673496885348660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06333339, y: 0.02666676, z: 0}
+  m_LocalPosition: {x: -0.0074999332, y: -0.0066666007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4351775196230096}
@@ -94,7 +94,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338549371782254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.77, y: 1.89, z: 0}
+  m_LocalPosition: {x: -2.18, y: 0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4258061214405956}
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pc2D: {fileID: 0}
-  IsAMovingObject: 0
-  IsAChildSprite: 0
+  IsAMovingObject: 1
+  IsAChildSprite: 1
   LocalPosition: {x: 0, y: 0}
   SpriteScale: 1
   _initialScale: {x: 1, y: 1, z: 1}
@@ -157,9 +157,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a8be4777ab1b143a5a09db05421f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 256
+  obsticleMask:
+    serializedVersion: 2
+    m_Bits: 2048
   currentState: {fileID: 11400000, guid: 4ad7b5db4fa940941b01702ba806fc69, type: 2}
-  remainInState: {fileID: 0}
+  remainInState: {fileID: 11400000, guid: 5748a099353e2094eb139da18572178e, type: 2}
   stateIndicatorHolder: {fileID: 4231927033151502}
+  detectionRadius: 4.23
+  mainTarget: {fileID: 0}
 --- !u!212 &212428409316454260
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -13,6 +13,7 @@ public class StateController : MonoBehaviour {
 
     public float detectionRadius;
 
+    [HideInInspector] public Transform mainTarget;
     bool bIsAIActive = true;
 
     public void SetupAI(bool bActivateAI)
@@ -42,7 +43,10 @@ public class StateController : MonoBehaviour {
 
     public void TransitionToState(State state)
     {
-
+        if (state != remainInState)
+        {
+            currentState = state;
+        }
     }
 
     public void PrintToConsole(string stringToPrint)

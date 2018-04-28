@@ -20,29 +20,39 @@ public class State : ScriptableObject
 
     void PerformActions(StateController controller)
     {
-        if (actions != null)
+        for (int i = 0; i < actions.Length; i++)
         {
-            for (int i = 0; i < actions.Length; i++)
+            if (actions[i] != null)
             {
                 actions[i].Act(controller);
             }
+            else
+            {
+                Debug.Log(controller.currentState.name + " Action: "  + i + " Initalized, but has no value assigned");
+            }
         }
-       
     }
- 
+
     void CheckTransitions(StateController controller)
     {
         for (int i = 0; i < transitions.Length; i++)
         {
             bool bDecisionReturnsTrue = transitions[i].decision.Decide(controller);
 
-            if (bDecisionReturnsTrue)
+            if (transitions[i] != null)
             {
-                controller.TransitionToState(transitions[i].trueState);
+                if (bDecisionReturnsTrue)
+                {
+                    controller.TransitionToState(transitions[i].trueState);
+                }
+                else
+                {
+                    controller.TransitionToState(transitions[i].falseState);
+                }
             }
             else
             {
-                controller.TransitionToState(transitions[i].falseState);
+                Debug.Log(controller.currentState.name + " Transition: " + i + " Initalized, but has no value assigned");
             }
         }
     }

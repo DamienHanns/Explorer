@@ -9,11 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee8c4292a7ae32e4fb69af7edc7ce302, type: 3}
-  m_Name: IdleState
+  m_Name: DiamondAttackState
   m_EditorClassIdentifier: 
   actions: []
-  transitions:
-  - decision: {fileID: 11400000, guid: a93c994b9645cd24ebaf368978877d56, type: 2}
-    trueState: {fileID: 0}
-    falseState: {fileID: 0}
-  stateIndicatorColour: {r: 0, g: 0.5034485, b: 1, a: 1}
+  transitions: []
+  stateIndicatorColour: {r: 1, g: 0, b: 0, a: 1}
